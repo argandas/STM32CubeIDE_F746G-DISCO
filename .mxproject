@@ -1,7 +1,7 @@
 [PreviousGenFiles]
-HeaderPath=C:/Users/harganda/STM32CubeIDE/workspace_1.0.2/aws_iot_ota/Inc
+HeaderPath=C:/Users/harganda/STM32CubeIDE/workspace_1.0.2/STM32CubeIDE_F746G-DISCO/Inc
 HeaderFiles=ffconf.h;bsp_driver_sd.h;sd_diskio.h;fatfs.h;fatfs_platform.h;FreeRTOSConfig.h;usb_host.h;usbh_conf.h;usbh_platform.h;stm32f7xx_it.h;stm32f7xx_hal_conf.h;main.h;STM32F7DMA.hpp;STM32F7HAL.hpp;STM32F7TouchController.hpp;STM32F7Instrumentation.hpp;HW_Init.hpp;lwip.h;lwipopts.h;ethernetif.h;mbedtls.h;mbedtls_config.h;ApplicationFontProvider.hpp;
-SourcePath=C:/Users/harganda/STM32CubeIDE/workspace_1.0.2/aws_iot_ota/Src
+SourcePath=C:/Users/harganda/STM32CubeIDE/workspace_1.0.2/STM32CubeIDE_F746G-DISCO/Src
 SourceFiles=bsp_driver_sd.c;sd_diskio.c;fatfs.c;fatfs_platform.c;freertos.c;usb_host.c;usbh_conf.c;usbh_platform.c;stm32f7xx_it.c;stm32f7xx_hal_msp.c;stm32f7xx_hal_timebase_tim.c;main.c;BoardConfiguration.cpp;GPIO.cpp;STM32F7DMA.cpp;STM32F7HAL.cpp;STM32F7TouchController.cpp;STM32F7Instrumentation.cpp;HW_Init.cpp;lwip.c;ethernetif.c;mbedtls.c;net_sockets.c;hardware_rng.c;*.cpp;main.cpp;
 
 [PreviousLibFiles]

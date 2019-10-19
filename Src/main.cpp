@@ -80,6 +80,7 @@ UART_HandleTypeDef huart6;
 HCD_HandleTypeDef hhcd_USB_OTG_FS;
 
 osThreadId defaultTaskHandle;
+osThreadId SDTaskHandle;
 /* USER CODE BEGIN PV */
 
 /* USER CODE END PV */
@@ -110,6 +111,7 @@ extern void GRAPHICS_HW_Init(void);
 extern void GRAPHICS_Init(void);
 extern void GRAPHICS_MainTask(void);
 void StartDefaultTask(void const * argument);
+void StartSDTask(void const * argument);
 
 /* USER CODE BEGIN PFP */
 
@@ -200,6 +202,10 @@ int main(void)
   /* definition and creation of defaultTask */
   osThreadDef(defaultTask, StartDefaultTask, osPriorityNormal, 0, 4096);
   defaultTaskHandle = osThreadCreate(osThread(defaultTask), NULL);
+
+  /* definition and creation of SDTask */
+  osThreadDef(SDTask, StartSDTask, osPriorityNormal, 0, 128);
+  SDTaskHandle = osThreadCreate(osThread(SDTask), NULL);
 
   /* USER CODE BEGIN RTOS_THREADS */
   /* add threads, ... */
@@ -722,7 +728,7 @@ static void MX_SAI2_Init(void)
   hsai_BlockB2.Init.MonoStereoMode = SAI_STEREOMODE;
   hsai_BlockB2.Init.CompandingMode = SAI_NOCOMPANDING;
   hsai_BlockB2.Init.TriState = SAI_OUTPUT_NOTRELEASED;
-  hsai_BlockB2.FrameInit.FrameLength = 8;
+  hsai_BlockB2.FrameInit.FrameLength = 24;
   hsai_BlockB2.FrameInit.ActiveFrameLength = 1;
   hsai_BlockB2.FrameInit.FSDefinition = SAI_FS_STARTFRAME;
   hsai_BlockB2.FrameInit.FSPolarity = SAI_FS_ACTIVE_LOW;
@@ -1346,6 +1352,7 @@ void StartDefaultTask(void const * argument)
            
           
     
+    
 
 /* Graphic application */  
   GRAPHICS_MainTask();
@@ -1357,6 +1364,24 @@ void StartDefaultTask(void const * argument)
     osDelay(1);
   }
   /* USER CODE END 5 */ 
+}
+
+/* USER CODE BEGIN Header_StartSDTask */
+/**
+* @brief Function implementing the SDTask thread.
+* @param argument: Not used
+* @retval None
+*/
+/* USER CODE END Header_StartSDTask */
+void StartSDTask(void const * argument)
+{
+  /* USER CODE BEGIN StartSDTask */
+  /* Infinite loop */
+  for(;;)
+  {
+    osDelay(1);
+  }
+  /* USER CODE END StartSDTask */
 }
 
 /**
