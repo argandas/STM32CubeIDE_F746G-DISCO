@@ -1,0 +1,1537 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Components": [
+          {
+            "Color": {
+              "Red": 0,
+              "Green": 0,
+              "Blue": 0
+            },
+            "Alpha": 255,
+            "Name": "backgroundBox",
+            "X": 0,
+            "Y": 0,
+            "Width": 800,
+            "Height": 480,
+            "Type": "Box",
+            "Visible": false,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "bg.png",
+            "Alpha": 255,
+            "Name": "backgroundImage",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ToggleButtonTrigger",
+              "InitalStatePressed": false
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 19,
+                "TextId": "toggleButtonWhite",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 82,
+                  "Green": 82,
+                  "Blue": 82
+                },
+                "ColorPressed": {
+                  "Red": 231,
+                  "Green": 154,
+                  "Blue": 9
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": false,
+                "ImageReleased": "small_btn.png",
+                "ImagePressed": "small_btn_pressed.png"
+              }
+            ],
+            "Name": "toggleButton",
+            "X": 348,
+            "Y": 34,
+            "Width": 100,
+            "Height": 56,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "RepeatButtonTrigger",
+              "Delay": 100,
+              "Interval": 100
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 34,
+                "Y": 14,
+                "IconReleased": "black_arrow_up.png",
+                "IconPressed": "orange_arrow_up.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 100,
+                "Height": 45,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 222,
+                  "Green": 222,
+                  "Blue": 222
+                },
+                "ColorPressed": {
+                  "Red": 40,
+                  "Green": 58,
+                  "Blue": 64
+                },
+                "ColorBorderReleased": {
+                  "Red": 54,
+                  "Green": 62,
+                  "Blue": 65
+                },
+                "ColorBorderPressed": {
+                  "Red": 95,
+                  "Green": 103,
+                  "Blue": 109
+                }
+              }
+            ],
+            "Name": "touchButton",
+            "X": 32,
+            "Y": 45,
+            "Width": 100,
+            "Height": 45,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": -2,
+                "Y": 12,
+                "TextId": "SingleUseId3",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 70,
+                  "Green": 70,
+                  "Blue": 70
+                },
+                "ColorPressed": {
+                  "Red": 231,
+                  "Green": 154,
+                  "Blue": 9
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "small_btn.png",
+                "ImagePressed": "small_btn_pressed.png"
+              }
+            ],
+            "Name": "zeroButton",
+            "X": 32,
+            "Y": 90,
+            "Width": 100,
+            "Height": 56,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "RepeatButtonTrigger",
+              "Delay": 100,
+              "Interval": 100
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 34,
+                "Y": 14,
+                "IconReleased": "black_arrow.png",
+                "IconPressed": "orange_arrow.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 100,
+                "Height": 45,
+                "LockToFlexButtonSize": false,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 222,
+                  "Green": 222,
+                  "Blue": 222
+                },
+                "ColorPressed": {
+                  "Red": 48,
+                  "Green": 58,
+                  "Blue": 64
+                },
+                "ColorBorderReleased": {
+                  "Red": 54,
+                  "Green": 62,
+                  "Blue": 65
+                },
+                "ColorBorderPressed": {
+                  "Red": 128,
+                  "Green": 136,
+                  "Blue": 143
+                }
+              }
+            ],
+            "Name": "repeatButton",
+            "X": 32,
+            "Y": 146,
+            "Width": 100,
+            "Height": 45,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "counter_box.png",
+            "Alpha": 255,
+            "Name": "counterBackgroundImage",
+            "X": 164,
+            "Y": 42,
+            "Width": 152,
+            "Height": 154,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "numberText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 222,
+              "Green": 222,
+              "Blue": 222
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId24",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Name": "countTxt",
+            "X": 164,
+            "Y": 74,
+            "Width": 152,
+            "Height": 90,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 15,
+                "Y": 15,
+                "IconReleased": "__designer\\blue_icons_settings_32.png",
+                "IconPressed": "__designer\\blue_icons_settings_32.png"
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "Style": "Style1",
+                "ImageReleased": "__designer\\blue_buttons_round_edge_icon_button.png",
+                "ImagePressed": "__designer\\blue_buttons_round_edge_icon_button_pressed.png"
+              }
+            ],
+            "Name": "screenBtnLogger",
+            "X": 150,
+            "Y": 198,
+            "Width": 60,
+            "Height": 60,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 15,
+                "Y": 16,
+                "IconReleased": "__designer\\blue_icons_tools_32.png",
+                "IconPressed": "__designer\\blue_icons_tools_32.png"
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "Style": "Style1",
+                "ImageReleased": "__designer\\blue_buttons_round_edge_icon_button.png",
+                "ImagePressed": "__designer\\blue_buttons_round_edge_icon_button_pressed.png"
+              }
+            ],
+            "Name": "screenBtnNetwork",
+            "X": 210,
+            "Y": 198,
+            "Width": 60,
+            "Height": 60,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 17,
+                "Y": 15,
+                "IconReleased": "__designer\\blue_icons_document_32.png",
+                "IconPressed": "__designer\\blue_icons_document_32.png"
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "Style": "Style1",
+                "ImageReleased": "__designer\\blue_buttons_round_edge_icon_button.png",
+                "ImagePressed": "__designer\\blue_buttons_round_edge_icon_button_pressed.png"
+              }
+            ],
+            "Name": "screenBtnIOCont",
+            "X": 270,
+            "Y": 198,
+            "Width": 60,
+            "Height": 60,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "toggleButtonInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "toggleButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "toggleButtonPressed",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "touchButtonInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "touchButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "touchButtonPressed",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "zeroButtonInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "zeroButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "zeroButtonPressed",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "repeatButtonInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "repeatButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "repeatButtonPressed",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "screenLoggerInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "screenBtnLogger",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Logger",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "screenNetworkInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "screenBtnNetwork",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Network",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "screenIOControlInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "screenBtnIOCont",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "IOControl",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "Main",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "bg.png",
+            "Alpha": 255,
+            "Name": "backgroundImage",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 15,
+                "Y": 15,
+                "IconReleased": "__designer\\blue_icons_home_32.png",
+                "IconPressed": "__designer\\blue_icons_home_32.png"
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "Style": "Style1",
+                "ImageReleased": "__designer\\blue_buttons_round_edge_icon_button.png",
+                "ImagePressed": "__designer\\blue_buttons_round_edge_icon_button_pressed.png"
+              }
+            ],
+            "Name": "flexButton1_1",
+            "X": 10,
+            "Y": 10,
+            "Width": 60,
+            "Height": 60,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 19,
+                "TextId": "SingleUseId14",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 70,
+                  "Green": 70,
+                  "Blue": 70
+                },
+                "ColorPressed": {
+                  "Red": 231,
+                  "Green": 154,
+                  "Blue": 9
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "small_btn.png",
+                "ImagePressed": "small_btn_pressed.png"
+              }
+            ],
+            "Name": "logButton",
+            "X": 135,
+            "Y": 200,
+            "Width": 100,
+            "Height": 56,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 19,
+                "TextId": "SingleUseId15",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 70,
+                  "Green": 70,
+                  "Blue": 70
+                },
+                "ColorPressed": {
+                  "Red": 231,
+                  "Green": 154,
+                  "Blue": 9
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "small_btn.png",
+                "ImagePressed": "small_btn_pressed.png"
+              }
+            ],
+            "Name": "dumpButton",
+            "X": 245,
+            "Y": 200,
+            "Width": 100,
+            "Height": 56,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 19,
+                "TextId": "SingleUseId16",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 70,
+                  "Green": 70,
+                  "Blue": 70
+                },
+                "ColorPressed": {
+                  "Red": 231,
+                  "Green": 154,
+                  "Blue": 9
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "small_btn.png",
+                "ImagePressed": "small_btn_pressed.png"
+              }
+            ],
+            "Name": "clearLogButton",
+            "X": 355,
+            "Y": 200,
+            "Width": 100,
+            "Height": 56,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "counter_box.png",
+            "Alpha": 255,
+            "Name": "counterBackgroundImage",
+            "X": 164,
+            "Y": 23,
+            "Width": 152,
+            "Height": 154,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "numberText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 222,
+              "Green": 222,
+              "Blue": 222
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId17",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Name": "countTxt",
+            "X": 164,
+            "Y": 55,
+            "Width": 152,
+            "Height": 90,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 19,
+                "TextId": "SingleUseId18",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 70,
+                  "Green": 70,
+                  "Blue": 70
+                },
+                "ColorPressed": {
+                  "Red": 231,
+                  "Green": 154,
+                  "Blue": 9
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "small_btn.png",
+                "ImagePressed": "small_btn_pressed.png"
+              }
+            ],
+            "Name": "sentButton",
+            "X": 25,
+            "Y": 200,
+            "Width": 100,
+            "Height": 56,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "flexButton1_1",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "North",
+              "ActionComponent": "Main",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "logBtnInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "logButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "logButtonPressed",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "dumpBtnInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "dumpButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "dumpButtonPressed",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "clearBtnInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "clearLogButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "clearButtonPressed",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "sentBtnInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "sentButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "sentButtonPressed",
+              "Type": "ActionCustom"
+            }
+          }
+        ],
+        "Name": "Logger",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "bg.png",
+            "Alpha": 255,
+            "Name": "backgroundImage",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 15,
+                "Y": 15,
+                "IconReleased": "__designer\\blue_icons_home_32.png",
+                "IconPressed": "__designer\\blue_icons_home_32.png"
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "Style": "Style1",
+                "ImageReleased": "__designer\\blue_buttons_round_edge_icon_button.png",
+                "ImagePressed": "__designer\\blue_buttons_round_edge_icon_button_pressed.png"
+              }
+            ],
+            "Name": "flexButton1",
+            "X": 10,
+            "Y": 10,
+            "Width": 60,
+            "Height": 60,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 19,
+                "TextId": "SingleUseId19",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 70,
+                  "Green": 70,
+                  "Blue": 70
+                },
+                "ColorPressed": {
+                  "Red": 231,
+                  "Green": 154,
+                  "Blue": 9
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "small_btn.png",
+                "ImagePressed": "small_btn_pressed.png"
+              }
+            ],
+            "Name": "tcpButton",
+            "X": 154,
+            "Y": 184,
+            "Width": 100,
+            "Height": 56,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "btn_long.png",
+            "Alpha": 255,
+            "Name": "image1",
+            "X": 155,
+            "Y": 108,
+            "Width": 200,
+            "Height": 56,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "SingleUseId20",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 255,
+              "Green": 255,
+              "Blue": 255
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Name": "textArea1",
+            "X": 80,
+            "Y": 127,
+            "Width": 69,
+            "Height": 18,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "ipAddrText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 69,
+              "Green": 69,
+              "Blue": 69
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId25",
+              "UseBuffer": true,
+              "BufferSize": 16
+            },
+            "Name": "ipAddrText",
+            "X": 169,
+            "Y": 127,
+            "Width": 170,
+            "Height": 18,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "ipAddrText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 222,
+              "Green": 222,
+              "Blue": 222
+            },
+            "Alpha": 255,
+            "AutoSize": true,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Name": "countTxt",
+            "X": 179,
+            "Y": 175,
+            "Width": 0,
+            "Height": 18,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 15,
+                "Y": 15,
+                "IconReleased": "__designer\\blue_icons_refresh_32.png",
+                "IconPressed": "__designer\\blue_icons_refresh_32.png"
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "Style": "Style1",
+                "ImageReleased": "__designer\\blue_buttons_round_edge_icon_button.png",
+                "ImagePressed": "__designer\\blue_buttons_round_edge_icon_button_pressed.png"
+              }
+            ],
+            "Name": "refreshButton",
+            "X": 404,
+            "Y": 10,
+            "Width": 60,
+            "Height": 60,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "goHome",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "flexButton1",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Main",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "tcpButtonInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "tcpButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "tcpButtonPressed",
+              "Type": "ActionCustom"
+            }
+          },
+          {
+            "InteractionName": "refresh",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "refreshButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionNone",
+              "ActionComponent": "Network",
+              "Type": "ActionGotoScreen"
+            }
+          }
+        ],
+        "Name": "Network",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      },
+      {
+        "Components": [
+          {
+            "RelativeFilename": "bg.png",
+            "Alpha": 255,
+            "Name": "backgroundImage",
+            "X": 0,
+            "Y": 0,
+            "Width": 480,
+            "Height": 272,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 15,
+                "Y": 15,
+                "IconReleased": "__designer\\blue_icons_home_32.png",
+                "IconPressed": "__designer\\blue_icons_home_32.png"
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "Style": "Style1",
+                "ImageReleased": "__designer\\blue_buttons_round_edge_icon_button.png",
+                "ImagePressed": "__designer\\blue_buttons_round_edge_icon_button_pressed.png"
+              }
+            ],
+            "Name": "home_button",
+            "X": 10,
+            "Y": 10,
+            "Width": 60,
+            "Height": 60,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 19,
+                "TextId": "SingleUseId13",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 70,
+                  "Green": 70,
+                  "Blue": 70
+                },
+                "ColorPressed": {
+                  "Red": 231,
+                  "Green": 154,
+                  "Blue": 9
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "small_btn.png",
+                "ImagePressed": "small_btn_pressed.png"
+              }
+            ],
+            "Name": "ledButton",
+            "X": 331,
+            "Y": 108,
+            "Width": 100,
+            "Height": 56,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "RepeatButtonTrigger",
+              "Delay": 100,
+              "Interval": 100
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 34,
+                "Y": 14,
+                "IconReleased": "black_arrow_up.png",
+                "IconPressed": "orange_arrow_up.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 100,
+                "Height": 45,
+                "LockToFlexButtonSize": true,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 222,
+                  "Green": 222,
+                  "Blue": 222
+                },
+                "ColorPressed": {
+                  "Red": 40,
+                  "Green": 58,
+                  "Blue": 64
+                },
+                "ColorBorderReleased": {
+                  "Red": 54,
+                  "Green": 62,
+                  "Blue": 65
+                },
+                "ColorBorderPressed": {
+                  "Red": 95,
+                  "Green": 103,
+                  "Blue": 109
+                }
+              }
+            ],
+            "Name": "touchButton",
+            "X": 190,
+            "Y": 10,
+            "Width": 100,
+            "Height": 45,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "ClickButtonTrigger"
+            },
+            "ButtonStyles": [
+              {
+                "Type": "TextButtonStyle",
+                "X": 0,
+                "Y": 19,
+                "TextId": "SingleUseId22",
+                "TextRotation": "0",
+                "ColorReleased": {
+                  "Red": 70,
+                  "Green": 70,
+                  "Blue": 70
+                },
+                "ColorPressed": {
+                  "Red": 231,
+                  "Green": 154,
+                  "Blue": 9
+                }
+              },
+              {
+                "Type": "ImageButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "LockFlexButtonToImageSize": true,
+                "ImageReleased": "small_btn.png",
+                "ImagePressed": "small_btn_pressed.png"
+              }
+            ],
+            "Name": "zeroButton",
+            "X": 50,
+            "Y": 108,
+            "Width": 100,
+            "Height": 56,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "Alpha": 255,
+            "ButtonTrigger": {
+              "Type": "RepeatButtonTrigger",
+              "Delay": 100,
+              "Interval": 100
+            },
+            "ButtonStyles": [
+              {
+                "Type": "IconButtonStyle",
+                "X": 34,
+                "Y": 14,
+                "IconReleased": "black_arrow.png",
+                "IconPressed": "orange_arrow.png"
+              },
+              {
+                "Type": "BoxWithBorderButtonStyle",
+                "X": 0,
+                "Y": 0,
+                "Width": 100,
+                "Height": 45,
+                "LockToFlexButtonSize": false,
+                "BorderSize": 5,
+                "ColorReleased": {
+                  "Red": 222,
+                  "Green": 222,
+                  "Blue": 222
+                },
+                "ColorPressed": {
+                  "Red": 48,
+                  "Green": 58,
+                  "Blue": 64
+                },
+                "ColorBorderReleased": {
+                  "Red": 54,
+                  "Green": 62,
+                  "Blue": 65
+                },
+                "ColorBorderPressed": {
+                  "Red": 128,
+                  "Green": 136,
+                  "Blue": 143
+                }
+              }
+            ],
+            "Name": "repeatButton",
+            "X": 190,
+            "Y": 219,
+            "Width": 100,
+            "Height": 45,
+            "Type": "FlexButton",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "RelativeFilename": "counter_box.png",
+            "Alpha": 255,
+            "Name": "counterBackgroundImage",
+            "X": 164,
+            "Y": 59,
+            "Width": 152,
+            "Height": 154,
+            "Type": "Image",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          },
+          {
+            "TextId": "numberText",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 222,
+              "Green": 222,
+              "Blue": 222
+            },
+            "Alpha": 255,
+            "AutoSize": false,
+            "LineSpacing": 0,
+            "Wildcard1": {
+              "TextId": "SingleUseId23",
+              "UseBuffer": true,
+              "BufferSize": 3
+            },
+            "Name": "countTxt",
+            "X": 164,
+            "Y": 91,
+            "Width": 152,
+            "Height": 90,
+            "Type": "TextArea",
+            "Visible": true,
+            "Draggable": false,
+            "Clickable": false,
+            "Fadeable": false,
+            "Moveable": false
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "Interaction1",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "home_button",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "ScreenTransitionType": "ScreenTransitionCover",
+              "ScreenTransitionDirection": "South",
+              "ActionComponent": "Main",
+              "Type": "ActionGotoScreen"
+            }
+          },
+          {
+            "InteractionName": "ledButtonInteraction",
+            "HasCompletedTrigger": false,
+            "Trigger": {
+              "TriggerComponent": "ledButton",
+              "Type": "TriggerClicked"
+            },
+            "Action": {
+              "FunctionName": "ledButtonPressed",
+              "Type": "ActionCustom"
+            }
+          }
+        ],
+        "Name": "IOControl",
+        "OverrideDefaultBufferSize": false,
+        "CanvasBufferSize": 0
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "TextEntries": [
+      {
+        "TextEntryId": "numberText",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId3",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "toggleButtonWhite",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "toggleButtonOrange",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId13",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId14",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId15",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId16",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId17",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId18",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId19",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId20",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId22",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId23",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "ipAddrText",
+        "IsResource": true
+      },
+      {
+        "TextEntryId": "SingleUseId24",
+        "IsResource": false
+      },
+      {
+        "TextEntryId": "SingleUseId25",
+        "IsResource": false
+      }
+    ],
+    "Name": "MyApplication5",
+    "Resolution": {
+      "Width": 480,
+      "Height": 272
+    },
+    "SelectedColorDepth": 24,
+    "StartupScreenName": "Main",
+    "SelectedStartupLanguage": "GB",
+    "Skin": "Blue",
+    "TouchGfxPath": "../Middlewares/ST/TouchGFX/touchgfx",
+    "UIPath": ".",
+    "ApplicationTemplate": {
+      "Name": "Simulator",
+      "Version": "2.0.0",
+      "Description": "STM32CubeMX Generated Simulator Application Template",
+      "AvailableColorDepths": [
+        24
+      ],
+      "AvailableImageFormats": {
+        "24": {
+          "Opaque": "RGB888",
+          "NonOpaque": "ARGB8888"
+        }
+      },
+      "AvailableResolutions": [
+        {
+          "Width": 480,
+          "Height": 272
+        }
+      ],
+      "PhysicalButtons": [],
+      "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j10",
+      "PostGenerateCommand": "touchgfx update_project --project-file=../EWARM/MyApplication5.ewp --gui-group-name=Application/User/TouchGFX/gui --generated-group-name=Application/User/TouchGFX/generated && touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+      "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j10",
+      "RunSimulatorCommand": "build\\bin\\simulator.exe",
+      "CompileTargetCommand": "make -f ../gcc/Makefile -j8",
+      "FlashTargetCommand": "make -f ../gcc/Makefile -j8 flash"
+    }
+  },
+  "Version": "4.10.0",
+  "CreatedBy": "4.10.0"
+}

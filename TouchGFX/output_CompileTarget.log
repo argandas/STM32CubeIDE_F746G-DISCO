@@ -1,0 +1,22 @@
+Converting images
+Compiling TouchGFX/generated/fonts/src/FontGetters.cpp
+TouchGFX/generated/fonts/src/FontGetters.cpp: In function 'touchgfx::InternalFlashFont& getFont_Asap_Regular_27_4bpp()':
+TouchGFX/generated/fonts/src/FontGetters.cpp:39:30: error: redefinition of 'touchgfx::InternalFlashFont& getFont_Asap_Regular_27_4bpp()'
+ touchgfx::InternalFlashFont& getFont_Asap_Regular_27_4bpp()
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TouchGFX/generated/fonts/src/FontGetters.cpp:27:30: note: 'touchgfx::InternalFlashFont& getFont_Asap_Regular_27_4bpp()' previously defined here
+ touchgfx::InternalFlashFont& getFont_Asap_Regular_27_4bpp()
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TouchGFX/generated/fonts/src/FontGetters.cpp: In function 'touchgfx::InternalFlashFont& getFont_Asap_Regular_80_4bpp()':
+TouchGFX/generated/fonts/src/FontGetters.cpp:63:30: error: redefinition of 'touchgfx::InternalFlashFont& getFont_Asap_Regular_80_4bpp()'
+ touchgfx::InternalFlashFont& getFont_Asap_Regular_80_4bpp()
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+TouchGFX/generated/fonts/src/FontGetters.cpp:51:30: note: 'touchgfx::InternalFlashFont& getFont_Asap_Regular_80_4bpp()' previously defined here
+ touchgfx::InternalFlashFont& getFont_Asap_Regular_80_4bpp()
+                              ^~~~~~~~~~~~~~~~~~~~~~~~~~~~
+gcc/Makefile:461: recipe for target 'TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/FontGetters.o' failed
+make[2]: *** [TouchGFX/build/STM32F746-DISCO/TouchGFX/generated/fonts/src/FontGetters.o] Error 1
+gcc/Makefile:428: recipe for target 'generate_assets' failed
+make[1]: *** [generate_assets] Error 2
+../gcc/Makefile:47: recipe for target 'all' failed
+make: *** [all] Error 2
